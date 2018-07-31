@@ -27,7 +27,7 @@
                 <p class="login-text">Login using your University ID</p>
                 <a href="{% url 'social:begin' 'aaf' %}?next=/" >
                     <img id="signInButton" class="center-image"
-                         src="{% static 'images/aaf_service.png' %}" />
+                         src="{% static 'social-auth/images/aaf_service.png' %}" />
                 </a>
             </div>
 
@@ -35,7 +35,7 @@
                 <p class="login-text"style="margin-top: 115px">Login with your Google Account</p>
                 <a href="{% url 'social:begin' 'google-oauth2' %}?next=/">
                 <img id="signInButton" class="center-image"
-                     src="{% static 'images/btn_google_signin_light_pressed_web.png' %}" />
+                     src="{% static 'social-auth/images/btn_google_signin_light_pressed_web.png' %}" />
                 </a>
             </div>
         </div>
