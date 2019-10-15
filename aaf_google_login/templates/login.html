@@ -1,0 +1,29 @@
+{% extends "tardis_portal/portal_template.html" %}
+{% load bootstrap %}
+{% load static from staticfiles %}
+{% block content %}
+    <head>
+        <link href="{% static 'aaf-google-login/css/default.css' %}" rel="stylesheet">
+    </head>
+    <legend style="text-align: center"> Log In to {{ site_title|default:'MyTardis' }}</legend>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-offset-3 col-md-6 login-box" style="margin: 2%;">
+              <img src="{% static 'aaf-google-login/images/aaf-logo.png' %}"
+                   style="max-width: 50%" class="center-image">
+              <p class="login-text">Log In using your University ID</p>
+              <a href="{% url 'social:begin' 'aaf' %}?next=/">
+                  <img id="signInButton" class="center-image"
+                       src="{% static 'aaf-google-login/images/aaf_service.png' %}" />
+              </a>
+          </div>
+        </div>  <!-- class="row" -->
+    </div>
+    <div class="container-fluid footer-text">
+        <p><strong>New User?</strong> If you don't have an account yet, logging in with any of these methods will create
+            an account for you. Logging in with the <strong>Australian Access Federation</strong> is the
+            preferred authentication mechanism.  If you don't have an <strong>Australian Access Federation</strong>
+            account, you can <a href="{% url 'social:begin' 'google-oauth2' %}?next=/">Log In with your Google Account</a>,
+            but this will require an additional activation step.</p>
+    </div>
+{% endblock content %}

@@ -3,14 +3,14 @@ from setuptools import setup, find_packages
 
 version = '0.0.1'
 
-setup(name='monash_openid_login',
+setup(name='aaf_google_login',
       version=version,
-      description="Strore.Monash specific login page for OpenID authentications",
+      description="MyTardis login page for AAF and Google OpenID authentications",
       long_description="""\
-MyTardis app to override default login template and use Monash specific OpenID authentication methods.\
+MyTardis app to override default login template and use AAF and Google OpenID authentication methods.\
 """,
       classifiers=[],
-      keywords='store monash openID',
+      keywords='MyTardis AAF OpenID',
       author='Manish Kumar',
       author_email='manish.kumar@monash.edu',
       url='',

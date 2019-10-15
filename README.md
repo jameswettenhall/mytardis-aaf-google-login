@@ -6,7 +6,7 @@ allows users to log in with
 or [Google OAuth](https://developers.google.com/identity/protocols/OAuth2) via
 [OpenID Connect](https://openid.net/connect/).
 
-![AAF Gppg;e login](docs/images/aaf-google-login.png)
+![AAF Google login](docs/images/aaf-google-login.png)
 
 ## Installation
 
@@ -23,7 +23,7 @@ If you using a virtualenv, remember to activate it first.
 
 Add the following to your MyTardis settings file eg. `/path/to/mytardis/tardis/settings.py`:
 
-Add `Monash_OpenID_Login` to your `INSTALLED_APPS`:
+Add `aaf_google_login` to your `INSTALLED_APPS`:
 
 ```
 INSTALLED_APPS = INSTALLED_APPS + (

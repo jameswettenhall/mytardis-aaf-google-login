@@ -1,3 +1,3 @@
-include monash_openid_login/templates/login.html
-include monash_openid_login/static/monash/css/default.css
-include monash_openid_login/static/monash/images/*.png
+include aaf_google_login/templates/login.html
+include aaf_google_login/static/aaf-google-login/css/default.css
+include aaf_google_login/static/aaf-google-login/images/*.png
