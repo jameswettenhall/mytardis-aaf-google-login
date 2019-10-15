@@ -10,8 +10,10 @@
     background-color: #e2e2e2;
     margin-top: 20px;
     padding: 20px 10px;
-
+    margin-left: 25%;
+    margin-right: 25%;
 }
+
 .footer-text {
     padding: 20px 10px;
 }
