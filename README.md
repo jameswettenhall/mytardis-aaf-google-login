@@ -1,22 +1,22 @@
-# Monash OpenID Login
+# MyTardis AAF Google Login
 
 Adds a login view to [MyTardis](https://github.com/mytardis/mytardis) which
-allows users to log in with LDAP credentials, or using the
+allows users to log in with 
 [Australian Access Federation](https://aaf.edu.au/about/)
 or [Google OAuth](https://developers.google.com/identity/protocols/OAuth2) via
 [OpenID Connect](https://openid.net/connect/).
 
-![Store.Monash login](docs/images/store.monash-login.png)
+![AAF Gppg;e login](docs/images/aaf-google-login.png)
 
 ## Installation
 
 These instructions assume that you have installed and configured MyTardis.
 If you haven't please follow the instructions in the latest [MyTardis documentation](https://mytardis.readthedocs.io/en/develop/admin/install.html).
 
-Install the latest version of the `Monash_OpenID_Login` app:
+Install the latest version of the `mytardis-aaf-google-login` app:
 
 ```
-pip install git+https://github.com/monash-merc/Monash_OpenID_Login@master#egg=monash_openid_login
+pip install git+https://github.com/jameswettenhall/mytardis-aaf-google-login@master#egg=aaf_google_login
 ```
 
 If you using a virtualenv, remember to activate it first.
@@ -27,7 +27,7 @@ Add `Monash_OpenID_Login` to your `INSTALLED_APPS`:
 
 ```
 INSTALLED_APPS = INSTALLED_APPS + (
-    'monash_openid_login',
+    'aaf_google_login
 )
 ```
 
@@ -35,7 +35,7 @@ Also in your MyTardis settings, override the login view:
 
 ```
 LOGIN_VIEWS = {
-    1: 'monash_openid_login.views.LoginView'
+    1: 'aaf_google_login.views.LoginView'
 }
 ```
 
