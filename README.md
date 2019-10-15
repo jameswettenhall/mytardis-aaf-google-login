@@ -23,11 +23,12 @@ If you using a virtualenv, remember to activate it first.
 
 Add the following to your MyTardis settings file eg. `/path/to/mytardis/tardis/settings.py`:
 
-Add `aaf_google_login` to your `INSTALLED_APPS`:
+Add `tardis.apps.social_auth` and `aaf_google_login` to your `INSTALLED_APPS`:
 
 ```
 INSTALLED_APPS = INSTALLED_APPS + (
-    'aaf_google_login',
+    'tardis.apps.social_auth',
+    'aaf_google_login'
 )
 ```
 
