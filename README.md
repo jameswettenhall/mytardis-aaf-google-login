@@ -27,7 +27,7 @@ Add `aaf_google_login` to your `INSTALLED_APPS`:
 
 ```
 INSTALLED_APPS = INSTALLED_APPS + (
-    'aaf_google_login
+    'aaf_google_login'
 )
 ```
 
