@@ -16,7 +16,7 @@ If you haven't please follow the instructions in the latest [MyTardis documentat
 Install the latest version of the `mytardis-aaf-google-login` app:
 
 ```
-pip install git+https://github.com/jameswettenhall/mytardis-aaf-google-login@master#egg=aaf_google_login
+pip install git+https://github.com/mytardis/mytardis-aaf-google-login@master#egg=aaf_google_login
 ```
 
 If you using a virtualenv, remember to activate it first.
